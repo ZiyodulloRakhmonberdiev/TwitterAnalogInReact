@@ -4,7 +4,7 @@ import PostStatusFilter from "../PostStatusFilter";
 import PostList from "../PostList/PostList";
 import PostAddForm from "../PostAddForm";
 import "./App.css";
-import { Component } from "react/cjs/react.development";
+import { Component } from "react";
 
 export default class App extends Component {
   constructor(props) {
