@@ -9,7 +9,9 @@
 }
 @media(max-width: 576px){
   .app{
-    margin: 20px;
-    height: calc(100vh - 20px);
+    margin: 10px;
+    height: calc(100vh - 10px);
+  overflow-x: hidden;
+    
   }
 }
