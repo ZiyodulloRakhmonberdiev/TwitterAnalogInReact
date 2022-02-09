@@ -12,6 +12,7 @@ export default class PostAddForm extends Component {
   onValueChange(e) {
     this.setState({ text: e.target.value });
   }
+
   onSubmit(e) {
     e.preventDefault();
     this.props.onAdd(this.state.text);
@@ -29,7 +30,7 @@ export default class PostAddForm extends Component {
         />
         <button
           type="button"
-          className="btn btn-outline-secondary"
+          className="btn btn-outline-secondary add__post__btn"
           onClick={this.onSubmit}
         >
           Add Post

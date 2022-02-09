@@ -4,4 +4,14 @@
 .app-list .list-group-item {
   padding: 20px 35px 10px 35px;
   margin-top: 10px;
+} 
+@media(max-width: 576px){
+  .app-list {
+    margin-top: 20px;
+  }
+  .app-list .list-group-item {
+    padding: 5px;
+    margin-top: 5px;
+    justify-content: space-between;
+  } 
 }

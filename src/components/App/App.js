@@ -26,6 +26,23 @@ export default class App extends Component {
     this.onFilterSelect = this.onFilterSelect.bind(this);
     this.maxId = 4;
   }
+  addItem(body) {
+    if (body === "") {
+      alert("Fill in the field");
+    } else {
+      const newItem = {
+        label: body,
+        important: false,
+        id: this.maxId++,
+      };
+      this.setState(({ data }) => {
+        const newArr = [...data, newItem];
+        return {
+          data: newArr,
+        };
+      });
+    }
+  }
   deleteItem(id) {
     this.setState(({ data }) => {
       const index = data.findIndex((elem) => elem.id === id);
@@ -50,19 +67,13 @@ export default class App extends Component {
       return items;
     }
   }
-  addItem(body) {
-    const newItem = {
-      label: body,
-      important: false,
-      id: this.maxId++,
-    };
-    this.setState(({ data }) => {
-      const newArr = [...data, newItem];
-      return {
-        data: newArr,
-      };
-    });
-  }
+
+  // componentDidUpdate() {
+  //   localStorage.setItem("myTodos", []);
+  //   myTodos[].push(this.term)
+  // }
+  // this.saveLocatTodos();
+
   onToggleImportant(id) {
     this.setState(({ data }) => {
       const index = data.findIndex((item) => item.id === id);

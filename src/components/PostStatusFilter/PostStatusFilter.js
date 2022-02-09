@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import "./PostStatusFilter.css";
 export default class PostStatusFilter extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +16,7 @@ export default class PostStatusFilter extends Component {
         <button
           key={name}
           type="button"
-          className={`btn ${clazz}`}
+          className={`btn ${clazz} filter__buttons`}
           onClick={() => this.props.onFilterSelect(name)}
         >
           {label}

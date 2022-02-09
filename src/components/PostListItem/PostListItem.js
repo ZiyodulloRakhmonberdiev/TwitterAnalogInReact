@@ -23,6 +23,8 @@ export default class PostListItem extends Component {
           {label}
         </span>
         <div className="d-flex justify-content-between align-items-center">
+          <i type="button" className="btn-heart fa fa-heart"></i>
+
           <button
             type="button"
             className="btn-star btn-sm"
@@ -33,7 +35,6 @@ export default class PostListItem extends Component {
           <button type="button" className="btn-trash btn-sm" onClick={onDelete}>
             <i className="fas fa-trash"></i>
           </button>
-          <i type="button" className="btn-heart fa fa-heart"></i>
         </div>
       </div>
     );

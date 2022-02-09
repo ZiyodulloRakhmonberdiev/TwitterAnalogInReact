@@ -6,3 +6,19 @@
   flex-grow: 1;
   margin-right: 3px;
 }
+@media(max-width: 576px){
+  .bottom-panel {
+    margin-top: 10px;
+  }
+  .new-post-label{
+    font-size: 14px;  
+  }
+  .add__post__btn{
+    font-size: 14px;
+  }
+  .bottom-panel .new-post-label {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
+  }
+}

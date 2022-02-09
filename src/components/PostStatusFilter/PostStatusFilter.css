@@ -1,0 +1,5 @@
+@media(max-width: 576px){
+  .filter__buttons{
+    font-size: 14px;
+  }
+}
