@@ -7,3 +7,9 @@
   overflow-y: scroll;
   height: 500px;
 }
+@media(max-width: 576px){
+  .app{
+    margin: 20px;
+    height: calc(100vh - 20px);
+  }
+}
